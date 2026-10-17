@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #16130f;
+  color: #f3efe4;
+  font-family: "Neucha", system-ui, cursive;
+  overflow-x: hidden;
+}
+
+.font-marker {
+  font-family: "Underdog", "Neucha", cursive;
+}
+
+.font-hand {
+  font-family: "Neucha", cursive;
+}
+
+.paper-texture {
+  background-color: #f3efe4;
+  background-image:
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='240' height='240'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/><feColorMatrix type='saturate' values='0'/></filter><rect width='240' height='240' filter='url(%23n)' opacity='0.06'/></svg>"),
+    radial-gradient(900px 480px at 15% -10%, rgba(255, 253, 245, 0.7), transparent 60%),
+    radial-gradient(700px 520px at 108% 112%, rgba(140, 105, 55, 0.16), transparent 55%);
+}
+
+.stamp {
+  font-family: "Underdog", cursive;
+  text-transform: uppercase;
+  border: 3px double currentColor;
+  border-radius: 6px;
+  padding: 0.12em 0.5em;
+  letter-spacing: 0.06em;
+  opacity: 0.92;
+}
+
+::selection {
+  background: #d33f2e;
+  color: #f3efe4;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #16130f;
+}
+::-webkit-scrollbar-thumb {
+  background: #3a332b;
+  border-radius: 5px;
+}
